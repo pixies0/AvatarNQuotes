@@ -40,7 +40,25 @@ São alguns desses conceitos:
 
 #### O projeto conta com o mecanismo de roteamento das páginas por meio de rotas disponibilizado pelo React.js, que nesse caso será de apenas 3 rotas sendo elas:
 
-![Código das rotas](public/imgs/router.png)
+```
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <RootPage />,
+    errorElement: <ErrorPage />
+  },
+  {
+    path: '/avatar',
+    element: <AvatarPage />
+  },
+  {
+    path: '/quote',
+    element: <QuotePage />
+  }
+])
+```
+
+<!-- ![Código das rotas](public/imgs/router.png) -->
 
 #### Este roteamento consta com um tratamento de erro, para o caso de acesso de rotas que não estão de acordo com as previamente estipuladas.
 
