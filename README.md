@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Introdução à Criação de Aplicação React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto foi inicializado com [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Scripts disponíveis
 
-In the project directory, you can run:
+No diretório do projeto, você pode executar:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Executa o aplicativo no modo de desenvolvimento.\
+Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo em seu navegador.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+A página será recarregada quando você fizer alterações.\
+Você também pode ver erros de lint no console.
 
-### `npm test`
+# Sobre
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Página inicial](public/imgs/Initial.png)
 
-### `npm run build`
+A aplicação consiste em um gerador de avatar e citações dado algumas constantes. O projeto deu foco a trabalhar a prática de alguns conceitos que o React.js nos proporciona.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+São alguns desses conceitos:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `Consumo de API`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### No caso está sendo usado duas API's públicas, as duas vão devolver informações através de requisições HTTP em formato JSON sendo a [Dicebear Avatars](https://avatars.dicebear.com/) para de avatares e [AnimeCHan](https://github.com/RocktimSaikia/anime-chan) para às citações
 
-### `npm run eject`
+### Demonstração:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- AVATAR - Por meio de poucos cliques em que é feito a seleção de uma sprite predefinida (constante) disponivél pela API e uma semente geradora (seed) temos um avatar criado !
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Página avatar](public/imgs/avatar.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- CITAÇÃO - Ao ser direcionado à página de citações quase que instantaneamente é recebido às informações necessárias enviadas pela API para compor nosso componente.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Página citação](public/imgs/quote.png)
 
-## Learn More
+### `Roteamento de Páginas`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### O projeto conta com o mecanismo de roteamento das páginas por meio de rotas disponibilizado pelo React.js, que nesse caso será de apenas 3 rotas sendo elas:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Código das rotas](public/imgs/router.png)
 
-### Code Splitting
+#### Este roteamento consta com um tratamento de erro, para o caso de acesso de rotas que não estão de acordo com as previamente estipuladas.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Código das rotas](public/imgs/ops.png)
 
-### Analyzing the Bundle Size
+### `Biblioteca de Componentes`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### A aplicação tem em suas dependencias a instalação da biblioteca [Mantine](https://mantine.dev/) para auxilio da construção da estrutura do front-end.
