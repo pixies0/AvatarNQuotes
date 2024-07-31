@@ -8,7 +8,7 @@ const BlockQuote = () => {
   useEffect(() => {
     async function getData() {
       try {
-        const data = await (await animeAPI.get('/quotes')).data
+        const data = await (await animeAPI.get('/')).data
         setQuote(data)
       } catch (error) {
         console.log(error)
@@ -18,8 +18,8 @@ const BlockQuote = () => {
   }, [])
 
   return (
-    <Blockquote cite={`${quote.quoteAuthor}`}>
-      {quote.quoteText}
+    <Blockquote cite={`${quote.author}`}>
+      {quote.quote}
     </Blockquote>
   )
 }
