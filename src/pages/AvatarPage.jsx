@@ -13,16 +13,24 @@ import {
 
 const AvatarPage = () => {
   const sprites = [
-    'male',
-    'female',
-    'human',
-    'identicon',
-    'initials',
-    'bottts',
+    'adventurer',
     'avataaars',
-    'jdenticon',
-    'gridy',
-    'micah'
+    'big-ears',
+    'avataaars',
+    'big-smile',
+    'bottts',
+    'croodles',
+    'fun-emoji',
+    'icons',
+    'identicon',
+    'lorelei',
+    'micah',
+    'miniavs',
+    'open-peeps',
+    'personas',
+    'pixel-art',
+    'shapes',
+    'thumbs',
   ]
 
   const [sprite, setSprite] = useState(sprites[0])
@@ -56,7 +64,7 @@ const AvatarPage = () => {
       <Button
         variant="gradient"
         gradient={{ from: 'indigo', to: 'cyan' }}
-        onClick={() => setAvatar(`${avatarAPI}${sprite}/${seed}.svg`)}
+        onClick={() => setAvatar(`${avatarAPI}${sprite}/svg?seed=${seed}`)}
       >
         Enviar
       </Button>
