@@ -22,7 +22,7 @@ function RootPage() {
           <Avatar
             radius="xl"
             size="lg"
-            src={`${avatarAPI}${sprites[Math.floor(Math.random() * 10)]}/.svg`}
+            src={`${avatarAPI}${sprites[Math.floor(Math.random() * 10)]}/svg`}
           ></Avatar>
           <BlockQuote />
         </Center>
