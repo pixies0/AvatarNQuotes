@@ -8,7 +8,7 @@ const BlockQuote = () => {
   useEffect(() => {
     async function getData() {
       try {
-        const data = await (await animeAPI.get('/')).data
+        const data = await (await animeAPI.get('/quotes')).data
         setQuote(data)
       } catch (error) {
         console.log(error)
