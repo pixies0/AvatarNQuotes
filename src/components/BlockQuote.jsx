@@ -9,7 +9,7 @@ const BlockQuote = () => {
     async function getData() {
       try {
         const data = await (await animeAPI.get('/quotes')).data
-        setQuote(data)
+        setQuote(data[0])
       } catch (error) {
         console.log(error)
       }
